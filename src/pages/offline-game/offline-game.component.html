@@ -1,0 +1,10 @@
+<main>
+    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" />
+    <section id="overlay">
+        <hr>
+        <button (click)="handlePlayerRoll()">
+            <img src="dice.svg" alt="Roll!">
+        </button>
+    </section>
+    <opponent [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" />
+</main>

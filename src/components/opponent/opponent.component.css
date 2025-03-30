@@ -1,0 +1,50 @@
+#opponent {
+    background-color: #F6134C;
+    background: linear-gradient(180deg, #F6134C 0%, darkred 100%);
+    transform: skew(-5deg);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+}
+
+#opponent > * {
+    transform: skew(5deg);
+    color: white;
+}
+
+#opponent > div > h1 {
+    font-size: 5vh;
+    margin: 0;
+}
+
+#opponent > div > h2 {
+    font-size: 2vh;
+    margin: 0;
+}
+
+#opponent > p {
+    font-weight: bold;
+    text-shadow: 0 3px #1e1e1e;
+    font-size: 15vh;
+}
+
+#opponent > div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin: 25px;
+}
+
+#opponent > span {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: skew(0deg);
+    z-index: 1;
+}
