@@ -2,11 +2,15 @@
     <div id="title-container">
         <img src="" alt="Logo">
         <div class="options">
-            <button><a routerLink="offline-game">Offline Game</a></button>
-            <button (click)="openHowToPlayModal()"><a>How to Play</a></button>
+            <button (click)="openModal('betting')">Offline Game</button>
+            <button (click)="openModal('instructions')">How to Play</button>
         </div>
     </div>
-    <modal [open]="isHowToPlayOpen">
-        <img (click)="closeHowToPlayModal()" src="" alt="">
+    <modal [open]="isBettingOpen">
+        <img (click)="closeModal('betting')" src="" alt="Exit">
+        <button routerLink="offline-game">Play!</button>
+    </modal>
+    <modal [open]="isInstructionsOpen">
+        <img (click)="closeModal('instructions')" src="" alt="Exit">
     </modal>
 </main>

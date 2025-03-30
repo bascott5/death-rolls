@@ -10,14 +10,33 @@ import { ModalComponent } from '../../components/modal/modal.component';
   styleUrl: './title-screen.component.css'
 })
 export class TitleScreenComponent {
-  isHowToPlayOpen: boolean = false;
+  isBettingOpen: boolean = false;
+  isInstructionsOpen: boolean = false;
   constructor() {}
 
-  openHowToPlayModal() {
-    this.isHowToPlayOpen = true;
+  openModal(mode: string) {
+    switch (mode) {
+      case "betting":
+        this.isBettingOpen = true;
+        break;
+      case "instructions":
+        this.isInstructionsOpen = true;
+        break;
+      default:
+        break;
+    }
   }
 
-  closeHowToPlayModal() {
-    this.isHowToPlayOpen = false;
+  closeModal(mode: string) {
+    switch (mode) {
+      case "betting":
+        this.isBettingOpen = false;
+        break;
+      case "instructions":
+        this.isInstructionsOpen = false;
+        break;
+      default:
+        break;
+    }
   }
 }
