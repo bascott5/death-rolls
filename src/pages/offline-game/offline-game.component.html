@@ -1,10 +1,24 @@
 <main>
-    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" />
+    <modal [open]="isModalOpen">
+        @if (betting) {
+            <input type="number" [(ngModel)]="bet" min="1" max="{{ points }}" name="bet">
+            <button (click)="bet <= points && bet > 0 ? startGame() : null">Play!</button>
+        }
+        @else {
+            <h1>You {{ playerTurn ? "Won!" : "Loss!" }}</h1>
+            <h2>You {{ playerTurn ? "gained" : "lost" }} {{ bet }} points</h2>
+            @if (points > 0) {
+                <button (click)="resetGame()">Play again!</button>
+            }
+            <button routerLink="/">Return to Title Screen</button>
+        }
+    </modal>
+    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [points]="points" />
     <section id="overlay">
         <hr>
         <button (click)="handlePlayerRoll()">
             <img src="dice.svg" alt="Roll!">
         </button>
     </section>
-    <opponent [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" />
+    <opponent [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" [points]="points" />
 </main>

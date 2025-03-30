@@ -11,6 +11,6 @@ export class PlayerComponent {
   @Input() name: string;
   @Input() currentTurn: boolean;
   @Input() val: number;
-  points = 0;
+  @Input() points: number;
   constructor() {}
 }
