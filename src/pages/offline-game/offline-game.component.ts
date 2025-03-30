@@ -26,7 +26,7 @@ export class OfflineGameComponent {
   constructor() {}
 
   startGame(): void {
-    this.closeModal();
+    this.isModalOpen = false;
     this.playerTurn = 
     this.rng(2) == 2 ? true : false;
 
@@ -91,13 +91,5 @@ export class OfflineGameComponent {
         clearTimeout(timer);
       }, 1000);
     }
-  }
-
-  openModal() {
-    this.isModalOpen = true;
-  }
-
-  closeModal() {
-    this.isModalOpen = false;
   }
 }
