@@ -32,7 +32,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 75%;
-    gap: 25px;
+    gap: 2vh;
     margin: 30px;
 }
 
