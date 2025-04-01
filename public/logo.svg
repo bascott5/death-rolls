@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="220.88422mm"
+   height="150.03053mm"
+   viewBox="0 0 220.88422 150.03053"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-34.516843,-100.43721)">
+    <g
+       id="g3">
+      <text
+         xml:space="preserve"
+         style="font-size:81.9941px;line-height:1.2;font-family:MathJax_Vector-Bold;-inkscape-font-specification:MathJax_Vector-Bold;letter-spacing:1.98973px;fill:#ffffff;fill-opacity:1;stroke:#3066be;stroke-width:1.98973;stroke-dasharray:none;stroke-opacity:1"
+         x="28.21423"
+         y="165.05949"
+         id="text1"><tspan
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:1.98973px;fill:#ffffff;fill-opacity:1;stroke:#3066be;stroke-width:1.98973;stroke-dasharray:none;stroke-opacity:1"
+           x="28.21423"
+           y="165.05949">Death</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:57.8209px;line-height:1.2;font-family:MathJax_Vector-Bold;-inkscape-font-specification:MathJax_Vector-Bold;letter-spacing:1.40312px;fill:#ffffff;fill-opacity:1;stroke:#f6134c;stroke-width:1.40276;stroke-dasharray:none;stroke-opacity:1"
+         x="30.07235"
+         y="235.29311"
+         id="text2"><tspan
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:1.40312px;fill:#ffffff;fill-opacity:1;stroke:#f6134c;stroke-width:1.40276;stroke-dasharray:none;stroke-opacity:1"
+           x="30.07235"
+           y="235.29311">Rolls</tspan></text>
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.98973;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3"
+         width="61.32893"
+         height="61.32893"
+         x="124.85986"
+         y="231.7348"
+         ry="5.7383003"
+         transform="rotate(-15)" />
+      <circle
+         style="fill:#1e1e1e;fill-opacity:1;stroke:#1e1e1e;stroke-width:2.40868;stroke-dasharray:none;stroke-opacity:1"
+         id="path3"
+         cx="218.13889"
+         cy="213.20557"
+         r="8.1388721" />
+    </g>
+  </g>
+</svg>
