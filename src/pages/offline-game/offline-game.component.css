@@ -49,3 +49,70 @@ main {
     background-color: #1e1e1e;;
     border: none;
 }
+
+#bet::-webkit-outer-spin-button,
+#bet::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#bet[type=number] {
+  -moz-appearance: textfield;
+}
+
+#bet {
+    all: unset;
+    width: 35%;
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 8vh;
+    box-sizing: border-box;
+}
+
+.modal-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    position: absolute;
+    bottom: 2vh;
+    width: 95%;
+}
+
+.modal-button {
+    all: unset;
+    background-color: white;
+    color: #1e1e1e;
+    border: 2px solid white;
+    width: 100%;
+    font-size: 2vh;
+    border-radius: 10px;
+    padding: 0.5vh;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.modal-button:hover {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+h1 {
+    all: unset;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+h2 {
+    all: unset;
+    font-size: 2vh;
+    margin-bottom: 6vh;
+    font-weight: bold;
+}
+
+p {
+    all: unset;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    font-size: 2vh;
+}

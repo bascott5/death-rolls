@@ -15,9 +15,11 @@
 
 #modal {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
+    align-items: center;
+    width: 50%;
     height: 50%;
     background-color: #1e1e1e;
     border-radius: 10px;
