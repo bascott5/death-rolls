@@ -2,12 +2,9 @@
     <div id="title-container">
         <img src="" alt="Logo">
         <div class="options">
-            <button routerLink="offline-game">Offline Game</button>
-            <button (click)="openInstructions()">Instructions</button>
+            <b>How to Play</b>
+            <p>Take turns rolling a die with your opponent. Whatever it lands on, that's the new number of sides it has. The first to roll a one loses!</p>
+            <button routerLink="offline-game">Start</button>
         </div>
     </div>
-    <modal [open]="isInstructionsOpen">
-        <img class="exit" (click)="closeInstructions()" src="" alt="Exit">
-        <p>Continuously roll dice until someone wins!</p>
-    </modal>
 </main>
