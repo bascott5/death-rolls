@@ -1,5 +1,5 @@
 <section id="{{ isPlayer ? 'player' : 'opponent' }}">
-    @if ((isPlayer && !currentTurn) || (!isPlayer && currentTurn)) {
+    @if (isModalOpen || (isPlayer && !currentTurn) || (!isPlayer && currentTurn)) {
         <span></span>
     }
     <div>

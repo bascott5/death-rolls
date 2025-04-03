@@ -21,12 +21,12 @@
     @if (!isInteractable) {
         <span></span>
     }
-    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [points]="points" [isPlayer]="true" />
+    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [isModalOpen]="isModalOpen" [points]="points" [isPlayer]="true" />
     <section id="overlay">
         <hr>
         <button (click)="handlePlayerRoll()">
             <img src="dice.svg" alt="Roll!">
         </button>
     </section>
-    <player [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" [points]="points" [isPlayer]="false" />
+    <player [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" [isModalOpen]="isModalOpen" [points]="points" [isPlayer]="false" />
 </main>
