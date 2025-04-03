@@ -1,10 +1,12 @@
-<section id="player">
-    @if (!currentTurn) {
+<section id="{{ isPlayer ? 'player' : 'opponent' }}">
+    @if ((isPlayer && !currentTurn) || (!isPlayer && currentTurn)) {
         <span></span>
     }
     <div>
         <h1>{{ name }}</h1>
-        <h2>{{ points }} Points</h2>
+        @if (isPlayer) {
+            <h2>{{ points }} Points</h2>
+        }
     </div>
     <p>{{ val }}</p>
 </section>

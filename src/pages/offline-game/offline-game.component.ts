@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { OpponentComponent } from "../../components/opponent/opponent.component";
 import { PlayerComponent } from "../../components/player/player.component";
 import { ModalComponent } from '../../components/modal/modal.component';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +7,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'offline-game',
   standalone: true,
-  imports: [OpponentComponent, PlayerComponent, ModalComponent, FormsModule, RouterLink],
+  imports: [PlayerComponent, ModalComponent, FormsModule, RouterLink],
   templateUrl: './offline-game.component.html',
   styleUrl: './offline-game.component.css'
 })

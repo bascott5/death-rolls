@@ -18,12 +18,12 @@
             </div>
         }
     </modal>
-    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [points]="points" />
+    <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [points]="points" [isPlayer]="true" />
     <section id="overlay">
         <hr>
         <button (click)="handlePlayerRoll()">
             <img src="dice.svg" alt="Roll!">
         </button>
     </section>
-    <opponent [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" [points]="points" />
+    <player [name]="'Computer'" [val]="computerVal" [currentTurn]="playerTurn" [points]="points" [isPlayer]="false" />
 </main>
