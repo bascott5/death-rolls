@@ -18,6 +18,7 @@ export class OfflineGameComponent {
   rollVal = 1000;
 
   isModalOpen = true;
+  isInteractable = true;
   betting = true;
   bet = 1;
 
@@ -26,12 +27,28 @@ export class OfflineGameComponent {
 
   startGame(): void {
     this.isModalOpen = false;
+    this.isInteractable = false;
     this.playerTurn = 
     this.rng(2) == 2 ? true : false;
+    
+    let counter = 0;
+    let animation = setInterval(() => {
+      this.playerTurn = !this.playerTurn
 
-    if (!this.playerTurn) {
-      this.roll();
-    }
+      counter++;
+      if (counter == 4) {
+        if (!this.playerTurn) {
+          this.handleComputerRoll();
+        }
+
+        clearInterval(animation);
+      }
+    }, 500);
+
+    let timeBeforeInteract = setTimeout(() => {
+      this.isInteractable = true;
+      clearTimeout(timeBeforeInteract);
+    }, 2000)
   }
 
   resetGame(): void {
@@ -78,7 +95,7 @@ export class OfflineGameComponent {
   
   @HostListener('document:keyup', ['$event']) 
   handleSpacebar(event: KeyboardEvent) {
-    if (event.code === 'Space') {
+    if (event.code === 'Space' && this.isInteractable) {
       this.handlePlayerRoll();
     }
   }

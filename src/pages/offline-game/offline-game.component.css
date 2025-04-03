@@ -56,7 +56,6 @@ main {
   margin: 0;
 }
 
-/* Firefox */
 #bet[type=number] {
   -moz-appearance: textfield;
 }
@@ -115,4 +114,11 @@ p {
     margin-top: 1vh;
     margin-bottom: 4vh;
     font-size: 2vh;
+}
+
+span {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }

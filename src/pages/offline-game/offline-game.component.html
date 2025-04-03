@@ -18,6 +18,9 @@
             </div>
         }
     </modal>
+    @if (!isInteractable) {
+        <span></span>
+    }
     <player [name]="'Player'" [val]="playerVal" [currentTurn]="playerTurn" [points]="points" [isPlayer]="true" />
     <section id="overlay">
         <hr>
