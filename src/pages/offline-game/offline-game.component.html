@@ -3,6 +3,8 @@
         @if (betting) {
             <input id="bet" type="number" [(ngModel)]="bet" min="1" max="{{ points }}" name="bet">
             <p>You can bet up to {{ points }} points.</p>
+            @if (bet > points && bet !== null) { <p class="warning">Bet less points.</p> }
+            @if (bet <= 0 && bet !== null) { <p class="warning">Bet more points.</p> }
             <div class="modal-button-container">
                 <button class="modal-button" (click)="bet <= points && bet > 0 ? startGame() : null">Place your bet</button>
             </div>

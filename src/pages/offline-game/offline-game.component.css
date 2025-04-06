@@ -96,6 +96,12 @@ main {
     color: white;
 }
 
+.warning {
+    position: absolute;
+    bottom: 3vh;
+    color: white;
+}
+
 h1 {
     all: unset;
     font-size: 4vh;
@@ -114,6 +120,7 @@ p {
     margin-top: 1vh;
     margin-bottom: 4vh;
     font-size: 2vh;
+    text-align: center;
 }
 
 span {
