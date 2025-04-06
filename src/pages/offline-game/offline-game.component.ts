@@ -5,11 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'offline-game',
-  standalone: true,
-  imports: [PlayerComponent, ModalComponent, FormsModule, RouterLink],
-  templateUrl: './offline-game.component.html',
-  styleUrl: './offline-game.component.css'
+    selector: 'offline-game',
+    standalone: true,
+    imports: [PlayerComponent, ModalComponent, FormsModule, RouterLink],
+    templateUrl: './offline-game.component.html',
+    styleUrl: './offline-game.component.css'
 })
 export class OfflineGameComponent {
   playerTurn: boolean;
