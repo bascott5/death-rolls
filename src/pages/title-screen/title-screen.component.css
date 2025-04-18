@@ -44,7 +44,6 @@ main {
     border: 2px solid white;
     background-color: white;
     color: #1e1e1e;
-    font-weight: bold;
     font-size: 2vh;
 }
 
@@ -68,7 +67,7 @@ p {
     font-size: 2vh;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     main {
         background: none;
         border-left: 5px solid white;
@@ -79,5 +78,22 @@ p {
     #title-container {
         width: 90%;
         border: none;
+    }
+
+    #title-container > img {
+        width: 85%;
+    }
+
+    b {
+        font-size: 4vh;
+    }
+
+    p {
+        font-size: 3vh;
+    }
+
+    .options > button {
+        font-size: 3vh;
+        margin: 45px 30px;
     }
 }

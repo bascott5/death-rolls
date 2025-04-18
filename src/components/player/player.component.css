@@ -74,8 +74,10 @@ body {
     z-index: 1;
 }
 
-/*@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     #player, #opponent {
+        height: 50%;
+        width: 100%;
         transform: none;
     }
 
@@ -90,4 +92,22 @@ body {
     #player > *, #opponent > * {
         transform: none;
     }
-}*/
+
+    #player > div, #opponent > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0;
+    }
+
+    #player > div {
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+
+    #opponent > div {
+        margin-bottom: 2vh;
+        margin-right: 2vh;
+    }
+}

@@ -85,7 +85,7 @@ main {
     border: 2px solid white;
     width: 100%;
     font-size: 2vh;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 0.5vh;
     box-sizing: border-box;
     cursor: default;
@@ -128,4 +128,45 @@ span {
     width: 100%;
     height: 100%;
     z-index: 2;
+}
+
+@media only screen and (max-width: 900px) {
+    #overlay > hr {
+        transform: skew(-5deg);
+        width: 100%;
+        height: 5px;
+        background-color: #1e1e1e;;
+        border: none;
+    }
+
+    #overlay > button {
+        padding: 4vh;
+    }
+
+    #overlay > button > img {
+        width: 15vh;
+    }
+
+    .modal-button {
+        font-size: 2.5vh;
+        padding: 1vh;
+    }
+
+    p {
+        font-size: 3vh;
+        margin-bottom: 7vh;
+    }
+
+    #bet {
+        width: 65%;
+        font-size: 15vh;
+    }
+
+    h1 {
+        font-size: 7vh;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
 }
