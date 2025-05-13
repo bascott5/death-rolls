@@ -1,5 +1,5 @@
 {
-  "name": "death-rolls",
+  "name": "last-rolls",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:death-rolls": "node dist/death-rolls/server/server.mjs"
+    "serve:ssr:last-rolls": "node dist/last-rolls/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "@angular/cli": "^19.2.6",
     "@angular/compiler-cli": "^19.2.5",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
